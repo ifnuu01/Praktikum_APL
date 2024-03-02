@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
 
-
 void clear()
 {
-    #ifdef _WIN32
-        system("cls");
-    #else
-        system("clear");
-    #endif
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
 }
 
 void enter()
@@ -25,7 +24,7 @@ int main()
     string nim = "2309106060";
     string inputNama, inputNim;
     int count = 0;
-    int pilih,pilihHasil;
+    int pilih, pilihHasil;
     double km, m, cm, mil;
 
     clear();
@@ -60,7 +59,7 @@ int main()
 
     do
     {
-        cout << "Menu Konversi Jarak/Waktu \n";
+        cout << "Menu Konversi Kecepatan \n";
         cout << "=========================\n\n";
         cout << "1. Konversi Kilometer/jam \n";
         cout << "2. Konversi Meter/detik \n";
@@ -88,16 +87,19 @@ int main()
             {
             case 1:
                 m = km * 1000 / 3600;
-                cout << "Hasil Konversi dari : " << km << " km/jam" << " menjadi " << m << " m/detik" << endl;
+                cout << "Hasil Konversi dari : " << km << " km/jam"
+                     << " menjadi " << m << " m/detik" << endl;
                 break;
             case 2:
                 cm = km * 100000 / 3600;
-                cout << "Hasil Konversi dari : " << km << " km/jam" << " menjadi " << cm << " cm/detik" << endl;
+                cout << "Hasil Konversi dari : " << km << " km/jam"
+                     << " menjadi " << cm << " cm/detik" << endl;
                 enter();
                 break;
             case 3:
                 mil = km / 1.609;
-                cout << "Hasil Konversi dari : " << km << " km/jam" << " menjadi " << mil << " mil/jam" << endl;
+                cout << "Hasil Konversi dari : " << km << " km/jam"
+                     << " menjadi " << mil << " mil/jam" << endl;
                 enter();
                 break;
             default:
@@ -121,17 +123,20 @@ int main()
             {
             case 1:
                 km = m * 3.6 / 1000;
-                cout << "Hasil Konversi dari : " << m << " m/detik" << " menjadi " << km << " km/jam" << endl;
+                cout << "Hasil Konversi dari : " << m << " m/detik"
+                     << " menjadi " << km << " km/jam" << endl;
                 enter();
                 break;
             case 2:
                 cm = m * 100;
-                cout << "Hasil konversi dari : " << m << " m/detik" << " menjadi " << cm << " cm/detik" << endl;
+                cout << "Hasil konversi dari : " << m << " m/detik"
+                     << " menjadi " << cm << " cm/detik" << endl;
                 enter();
                 break;
             case 3:
                 mil = m * 2.237 / 1000;
-                cout << "Hasil Konversi dari : " << m << " m/detik" << " menjadi " << mil << " mil/jam" << endl;
+                cout << "Hasil Konversi dari : " << m << " m/detik"
+                     << " menjadi " << mil << " mil/jam" << endl;
                 enter();
                 break;
             default:
@@ -155,17 +160,20 @@ int main()
             {
             case 1:
                 km = cm * 3600 / 100000;
-                cout << "Hasil konversi dari : " << cm << " cm/detik" << " menjadi " << km << " km/jam" << endl;
+                cout << "Hasil konversi dari : " << cm << " cm/detik"
+                     << " menjadi " << km << " km/jam" << endl;
                 enter();
                 break;
             case 2:
                 m = cm / 100;
-                cout << "Hasil konversi dari : " << cm << " cm/detik" << " menjadi " << m << " m/detik" << endl;
+                cout << "Hasil konversi dari : " << cm << " cm/detik"
+                     << " menjadi " << m << " m/detik" << endl;
                 enter();
                 break;
             case 3:
                 mil = cm * 0.02237;
-                cout << "Hasil konversi dari : " << cm << " cm/detik" << " menjadi " << mil << " mil/jam" << endl;
+                cout << "Hasil konversi dari : " << cm << " cm/detik"
+                     << " menjadi " << mil << " mil/jam" << endl;
                 enter();
                 break;
             default:
@@ -189,17 +197,20 @@ int main()
             {
             case 1:
                 km = mil * 1.609;
-                cout << "Hasil Konversi dari : " << mil << " mil/jam" << " menjadi " << km << " km/jam" << endl;
+                cout << "Hasil Konversi dari : " << mil << " mil/jam"
+                     << " menjadi " << km << " km/jam" << endl;
                 enter();
                 break;
             case 2:
                 m = mil * 1609 / 3600;
-                cout << "Hasil Konversi dari : " << mil << " mil/jam" << " menjadi " << m << " m/detik" << endl;
+                cout << "Hasil Konversi dari : " << mil << " mil/jam"
+                     << " menjadi " << m << " m/detik" << endl;
                 enter();
                 break;
             case 3:
                 cm = mil * 160900 / 3600;
-                cout << "Hasil Konversi dari : " << mil << " mil/jam" << " menjadi " << cm << " cm/detik" << endl;
+                cout << "Hasil Konversi dari : " << mil << " mil/jam"
+                     << " menjadi " << cm << " cm/detik" << endl;
                 enter();
                 break;
             default:
