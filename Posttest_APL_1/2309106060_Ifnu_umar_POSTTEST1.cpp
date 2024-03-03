@@ -89,6 +89,7 @@ int main()
                 m = km * 1000 / 3600;
                 cout << "Hasil Konversi dari : " << km << " km/jam"
                      << " menjadi " << m << " m/detik" << endl;
+                enter();
                 break;
             case 2:
                 cm = km * 100000 / 3600;
