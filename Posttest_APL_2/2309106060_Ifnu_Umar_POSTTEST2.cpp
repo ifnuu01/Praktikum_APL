@@ -51,7 +51,7 @@ int main()
     jumlahSpeaker = 10;
     batasLogin = 0;
     system("cls || clear");    
-    do{
+    while(true){
         cout << "Halaman Login \n";
         cout << "=============\n";
         cout << "Masukkan Nama : ";
@@ -72,7 +72,7 @@ int main()
             cout << "Login Gagal\n";
             batasLogin++;
         };
-    }while(batasLogin < 3);
+    };
 
     do{
         cout << "Halaman Managemant Merk Speaker\n";
