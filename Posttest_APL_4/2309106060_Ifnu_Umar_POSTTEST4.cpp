@@ -27,6 +27,7 @@ void tambahMerkSpeaker(dataSpeaker data[], int &jumlahData);
 void ubahMerkSpeaker(dataSpeaker data[], int &jumlahData);
 void hapusMerkSpeaker(dataSpeaker data[], int &jumlahData);
 void getline(string prompt, string &input);
+void getInputint(string prompt, int &input);
 
 int main(int argc, char const *argv[]) {
     int jumlahData = 1;
@@ -129,6 +130,7 @@ void managemaentSpeaker(dataSpeaker data[], int &jumlahData) {
         case 3:
             if(jumlahData == 0) {
                 cout << "Data tidak ada\n";
+                cin.ignore();
                 enter();
                 break;
             }else{
